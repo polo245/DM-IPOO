@@ -28,12 +28,12 @@ class Carte:
 		return self.__couleur
 
 	def __str__(self):
-		return f"{self.__valeur} de {lower(self.__couleur)}"
+		return f"{self.__valeur} de {self.__couleur.lower()}"
 
 	def __repr__(self):
 		return f"Carte({self.__valeur}, {self.__couleur})"
 
-	def __eq__(self, other):
+	def __eq__ (self, other):
 		return isinstance(other, Carte) and self.repr == other.repr
 
-	def __hash__(self.repr): ### WIP
+	def __hash__ (self.repr): #WIP
