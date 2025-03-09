@@ -36,4 +36,5 @@ class Carte:
 	def __eq__ (self, other):
 		return isinstance(other, Carte) and self.repr == other.repr
 
-	def __hash__ (self.repr): #WIP
+	def __hash__ (self):
+		pass
